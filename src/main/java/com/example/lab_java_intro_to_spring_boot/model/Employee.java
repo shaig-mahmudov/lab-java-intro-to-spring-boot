@@ -1,21 +1,19 @@
-package com.example.lab_java_intro_to_spring_boot;
+package com.example.lab_java_intro_to_spring_boot.model;
 
 public class Employee {
-    private Long id;
+    private Integer id;
     private String department;
     private String name;
     private Status status;
 
-    public Employee(Long id, String department, String name, Status status) {
-        this.department = department;
+    public Employee(Integer id, String department, String name, Status status) {
         this.id = id;
+        this.department = department;
         this.name = name;
-        this.status = Status.ON;
+        this.status = status;
     }
 
-    public Employee() {
-
-    }
+    public Employee() { }
 
     public Status getStatus() {
         return status;
@@ -41,11 +39,11 @@ public class Employee {
         this.department = department;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 }

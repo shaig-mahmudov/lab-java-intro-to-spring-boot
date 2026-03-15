@@ -1,14 +1,9 @@
-package com.example.lab_java_intro_to_spring_boot;
-
-import jakarta.persistence.*;
-import java.util.Date;
+package com.example.lab_java_intro_to_spring_boot.model;
 
 public class Patient {
     private int id;
     private String name;
     private String date_of_birth;
-    @ManyToOne
-    @JoinColumn(name = "admitted_by")
     private int admitted_by;
 
     public Patient(int id, String name, String date_of_birth, int admitted_by) {
